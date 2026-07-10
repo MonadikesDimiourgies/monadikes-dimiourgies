@@ -1,203 +1,127 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Μοναδικές Δημιουργίες</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-
-background:#faf8f4;
-color:#333;
-
-}
-
-header{
-
-background:white;
-padding:20px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-
-position:sticky;
-top:0;
-
-}
-
-.logo{
-
-font-size:30px;
-font-weight:bold;
-color:#b68a45;
-
-}
-
-nav a{
-
-text-decoration:none;
-margin-left:20px;
-color:#444;
-font-weight:bold;
-
-}
-
-.hero{
-
-height:600px;
-
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1600");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-flex-direction:column;
-
-color:white;
-
-text-align:center;
-
-padding:20px;
-
-}
-
-.hero h1{
-
-font-size:60px;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:22px;
-
-margin-bottom:35px;
-
-max-width:700px;
-
-}
-
-.button{
-
-display:inline-block;
-
-background:#b68a45;
-
-color:white;
-
-padding:15px 35px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-size:20px;
-
-}
-
-.section{
-
-padding:70px 30px;
-
-max-width:1200px;
-
-margin:auto;
-
-}
-
-.section h2{
-
-text-align:center;
-
-font-size:40px;
-
-margin-bottom:50px;
-
-color:#b68a45;
-
-}
-
-.categories{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:25px;
-
-}
-
-.card{
-
-background:white;
-
-padding:40px;
-
-border-radius:20px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-
-text-align:center;
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card h3{
-
-margin-top:20px;
-
-font-size:25px;
-
-}
-
-footer{
-
-background:#222;
-
-color:white;
-
-padding:40px;
-
-text-align:center;
-
-}
-
-footer a{
-
-color:#fff;
-
-text-decoration:none;
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μοναδικές Δημιουργίες</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+            background:#faf8f4;
+            color:#333;
+        }
+
+        header{
+            background:#ffffff;
+            padding:20px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 2px 10px rgba(0,0,0,.10);
+            position:sticky;
+            top:0;
+        }
+
+        .logo{
+            font-size:32px;
+            font-weight:bold;
+            color:#b68a45;
+        }
+
+        nav a{
+            text-decoration:none;
+            margin-left:25px;
+            color:#444;
+            font-weight:bold;
+        }
+
+        .hero{
+            height:550px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            background:linear-gradient(#00000080,#00000080),
+            url("https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=1600&q=80");
+            background-size:cover;
+            background-position:center;
+            color:white;
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:24px;
+            margin-bottom:35px;
+        }
+
+        .button{
+            background:#b68a45;
+            color:white;
+            padding:16px 35px;
+            border-radius:40px;
+            text-decoration:none;
+            font-size:20px;
+        }
+
+        section{
+            max-width:1200px;
+            margin:auto;
+            padding:70px 20px;
+        }
+
+        h2{
+            text-align:center;
+            color:#b68a45;
+            margin-bottom:40px;
+            font-size:38px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:40px;
+            border-radius:18px;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            text-align:center;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card h3{
+            margin-top:15px;
+            font-size:24px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:40px;
+            margin-top:60px;
+        }
+
+    </style>
 
 </head>
 
@@ -214,18 +138,15 @@ text-decoration:none;
 <nav>
 
 <a href="#">Αρχική</a>
-
 <a href="#">Δημιουργίες</a>
-
 <a href="#">Gallery</a>
-
 <a href="#">Επικοινωνία</a>
 
 </nav>
 
 </header>
 
-<section class="hero">
+<div class="hero">
 
 <h1>Χειροποίητες Δημιουργίες</h1>
 
@@ -237,17 +158,17 @@ text-decoration:none;
 
 <a class="button" href="https://wa.me/306931548967">
 
-WhatsApp
+Επικοινωνία μέσω WhatsApp
 
 </a>
 
-</section>
+</div>
 
-<section class="section">
+<section>
 
-<h2>Κατηγορίες</h2>
+<h2>Οι Κατηγορίες μας</h2>
 
-<div class="categories">
+<div class="cards">
 
 <div class="card">
 
@@ -291,17 +212,15 @@ WhatsApp
 
 <footer>
 
+<h3>Επικοινωνία</h3>
+
+<br>
+
 📞 6931548967
 
 <br><br>
 
-📧
-
-<a href="mailto:cs.md.tk@gmail.com">
-
-cs.md.tk@gmail.com
-
-</a>
+📧 cs.md.tk@gmail.com
 
 <br><br>
 
@@ -310,5 +229,4 @@ cs.md.tk@gmail.com
 </footer>
 
 </body>
-
 </html>
