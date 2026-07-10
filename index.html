@@ -1,140 +1,22 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Μοναδικές Δημιουργίες</title>
 
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<title>Μοναδικές Δημιουργίες</title>
 
-        body{
-            font-family:Arial,Helvetica,sans-serif;
-            background:#faf8f4;
-            color:#333;
-        }
+<meta name="description" content="Χειροποίητες δημιουργίες με μοναδικό σχεδιασμό. Τσάντες, πλεκτά, κεριά, διακοσμητικά και δώρα.">
 
-        header{
-            background:#ffffff;
-            padding:20px 40px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            box-shadow:0 2px 10px rgba(0,0,0,.10);
-            position:sticky;
-            top:0;
-        }
+<link rel="stylesheet" href="style.css">
 
-        .logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.logo img{
-    width:70px;
-    height:70px;
-    object-fit:cover;
-    border-radius:50%;
-}
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-.logo h1{
-    color:#8b6b2d;
-    font-size:32px;
-    margin:0;
-}
-
-        nav a{
-            text-decoration:none;
-            margin-left:25px;
-            color:#444;
-            font-weight:bold;
-        }
-
-        .hero{
-            height:550px;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            flex-direction:column;
-            text-align:center;
-            background:linear-gradient(#00000080,#00000080),
-            url("https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=1600&q=80");
-            background-size:cover;
-            background-position:center;
-            color:white;
-        }
-
-        .hero h1{
-            font-size:60px;
-            margin-bottom:20px;
-        }
-
-        .hero p{
-            font-size:24px;
-            margin-bottom:35px;
-        }
-
-        .button{
-            background:#b68a45;
-            color:white;
-            padding:16px 35px;
-            border-radius:40px;
-            text-decoration:none;
-            font-size:20px;
-        }
-
-        section{
-            max-width:1200px;
-            margin:auto;
-            padding:70px 20px;
-        }
-
-        h2{
-            text-align:center;
-            color:#b68a45;
-            margin-bottom:40px;
-            font-size:38px;
-        }
-
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:25px;
-        }
-
-        .card{
-            background:white;
-            padding:40px;
-            border-radius:18px;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-            text-align:center;
-            transition:.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-8px);
-        }
-
-        .card h3{
-            margin-top:15px;
-            font-size:24px;
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:40px;
-            margin-top:60px;
-        }
-
-    </style>
+<script src="https://kit.fontawesome.com/6b9a6f8e22.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -142,80 +24,65 @@
 
 <header>
 
+<div class="container">
+
 <div class="logo">
 
-🌸 Μοναδικές Δημιουργίες
+<img src="logo.png" alt="Μοναδικές Δημιουργίες">
+
+<div>
+
+<h1>Μοναδικές Δημιουργίες</h1>
+
+<p>Χειροποίητα με αγάπη</p>
+
+</div>
 
 </div>
 
 <nav>
 
 <a href="#">Αρχική</a>
-<a href="#">Δημιουργίες</a>
-<a href="#">Gallery</a>
-<a href="#">Επικοινωνία</a>
+
+<a href="#categories">Κατηγορίες</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Επικοινωνία</a>
 
 </nav>
 
+</div>
+
 </header>
 
-<div class="hero">
+<section class="hero">
 
-<h1>Χειροποίητες Δημιουργίες</h1>
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h2>Χειροποίητες Δημιουργίες που κάνουν τη διαφορά</h2>
 
 <p>
 
-Κάθε δημιουργία είναι μοναδική και φτιαγμένη με αγάπη.
+Τσάντες • Πλεκτά • Διακοσμητικά • Δώρα • Κεριά
 
 </p>
 
-<a class="button" href="https://wa.me/306931548967">
+<div class="buttons">
 
-Επικοινωνία μέσω WhatsApp
+<a href="#categories" class="gold-btn">
+
+Δείτε τις Δημιουργίες
 
 </a>
 
-</div>
+<a href="https://wa.me/306931548967" class="white-btn">
 
-<section>
+WhatsApp
 
-<h2>Οι Κατηγορίες μας</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>👜 Τσάντες</h3>
-
-</div>
-
-<div class="card">
-
-<h3>🕯️ Κεριά</h3>
-
-</div>
-
-<div class="card">
-
-<h3>🧶 Πλεκτές Δημιουργίες</h3>
-
-</div>
-
-<div class="card">
-
-<h3>🏠 Διακόσμηση</h3>
-
-</div>
-
-<div class="card">
-
-<h3>🎁 Δώρα</h3>
-
-</div>
-
-<div class="card">
-
-<h3>🎄 Εποχιακά</h3>
+</a>
 
 </div>
 
@@ -223,23 +90,150 @@
 
 </section>
 
+<section id="categories">
+
+<div class="title">
+
+<h2>Οι Κατηγορίες μας</h2>
+
+<p>
+
+Μοναδικές δημιουργίες φτιαγμένες με μεράκι.
+
+</p>
+
+</div>
+
+<div class="categories">
+    <div class="card">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <h3>Τσάντες</h3>
+    <p>Χειροποίητες τσάντες με μοναδικό σχεδιασμό.</p>
+</div>
+
+<div class="card">
+    <i class="fa-solid fa-mitten"></i>
+    <h3>Πλεκτές Δημιουργίες</h3>
+    <p>Πλεκτά με ποιότητα, ζεστασιά και στυλ.</p>
+</div>
+
+<div class="card">
+    <i class="fa-solid fa-fire-flame-simple"></i>
+    <h3>Κεριά</h3>
+    <p>Αρωματικά και διακοσμητικά κεριά για κάθε χώρο.</p>
+</div>
+
+<div class="card">
+    <i class="fa-solid fa-gift"></i>
+    <h3>Δώρα</h3>
+    <p>Ξεχωριστές ιδέες για κάθε περίσταση.</p>
+</div>
+
+<div class="card">
+    <i class="fa-solid fa-house"></i>
+    <h3>Διακοσμητικά</h3>
+    <p>Χειροποίητα αντικείμενα που ομορφαίνουν τον χώρο σας.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<div class="title">
+
+<h2>Gallery</h2>
+
+<p>
+Δείτε μερικές από τις αγαπημένες μας δημιουργίες.
+</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div class="title">
+
+<h2>Γιατί να μας επιλέξετε</h2>
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+<i class="fa-solid fa-heart"></i>
+<h3>Χειροποίητα</h3>
+<p>Κάθε προϊόν δημιουργείται με αγάπη και προσοχή στη λεπτομέρεια.</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-star"></i>
+<h3>Ποιότητα</h3>
+<p>Επιλέγουμε ποιοτικά υλικά για μοναδικό αποτέλεσμα.</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-truck-fast"></i>
+<h3>Αποστολή</h3>
+<p>Ασφαλής αποστολή σε όλη την Ελλάδα.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="title">
+
+<h2>Επικοινωνία</h2>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Είμαστε πάντα στη διάθεσή σας.</h3>
+
+<p><strong>📞 Τηλέφωνο:</strong> 6931548967</p>
+
+<p><strong>📧 Email:</strong> cs.md.tk@gmail.com</p>
+
+<p><strong>💬 WhatsApp:</strong> Άμεση επικοινωνία με ένα κλικ.</p>
+
+<a href="https://wa.me/306931548967" class="gold-btn">
+Επικοινωνία μέσω WhatsApp
+</a>
+
+</div>
+
+</section>
+
 <footer>
 
-<h3>Επικοινωνία</h3>
+<p>
 
-<br>
+© 2026 Μοναδικές Δημιουργίες • Με αγάπη για το χειροποίητο.
 
-📞 6931548967
-
-<br><br>
-
-📧 cs.md.tk@gmail.com
-
-<br><br>
-
-© 2026 Μοναδικές Δημιουργίες
+</p>
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
